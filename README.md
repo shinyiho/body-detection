@@ -1,4 +1,5 @@
-#body detection is powered by [PoseNet] (https://github.com/tensorflow/tfjs-models/tree/master/posenet)
-[demo](https://shinyiho.github.io/body-detection)
+# [body detection](https://shinyiho.github.io/body-detection)
+
+powered by PosNet!
 ![](./demo.png)
 ![](./demo.gif)
