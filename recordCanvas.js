@@ -41,7 +41,7 @@ function record() {
 
 	btn.onclick = (e) => {
 		recorder.stop();
-		btn.textContent = "Start Rendering Mp4 & Webm";
+		btn.textContent = "Start Record";
 		btn.onclick = record;
 	};
 
@@ -52,7 +52,7 @@ function record() {
 	recorder.start();
 
 	//change button text
-	btn.textContent = "Stop Rendering Mp4 & Webm";
+	btn.textContent = "Stop Record";
 }
 
 //add a frame every 50ms
@@ -117,8 +117,7 @@ async function toMp4(blobData) {
 //create gif and download at the end
 function createGif() {
 	_gif = new GIF({
-		workerScript:
-			"https://raw.githack.com/jnordberg/gif.js/master/dist/gif.worker.js",
+		//workerScript: 'https://raw.githack.com/jnordberg/gif.js/master/dist/gif.worker.js',
 		workerScript: "gif.worker.js",
 		workers: 2, //num of workers
 		quality: 10, //lower is better
